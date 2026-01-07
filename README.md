@@ -11,7 +11,7 @@ This project highlights how AI automation and human judgment can work together i
 ## Demo
 
 ### Workflow Screenshot
-[![Human-in-the-Loop Demo](Screenshot%202026-01-02%20135644.png)](https://youtu.be/Sz-O8Wl1Ckw)
+[![Human-in-the-Loop Demo](image.png)](https://youtu.be/Sz-O8Wl1Ckw)
 
 ### Direct Video Link
 https://youtu.be/Sz-O8Wl1Ckw
