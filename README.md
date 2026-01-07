@@ -1,50 +1,45 @@
 # Human-in-the-Loop Sales Email Automation using n8n
 
-This project implements a Human-in-the-Loop AI workflow using n8n, where an AI agent drafts a sales email, a human reviewer approves or rejects it, and the system automatically takes the next action based on the decision.
+This project demonstrates a Human-in-the-Loop AI sales automation workflow built using n8n.
 
-It demonstrates how AI agents and human judgment can work together in real-world sales automation.
+An AI agent drafts a personalized sales email for a new lead, a human reviewer then approves or rejects the email, and the workflow automatically takes the next action based on that decision. If approved, the email is sent to the lead. If rejected, the email is revised based on feedback and reprocessed.
+
+This project highlights how AI automation and human judgment can work together in real-world sales workflows.
 
 ---
 
 ## Demo
 
-[![Human in the Loop Demo](Screenshot-2026-01-02-135644.png)](https://youtu.be/YOUR_VIDEO_LINK_HERE)
+### Workflow Screenshot
+[![Human-in-the-Loop Demo](Screenshot%202026-01-02%20135644.png)](https://youtu.be/Sz-O8Wl1Ckw)
 
-Click the image above to watch the full workflow demonstration.
+### Direct Video Link
+https://youtu.be/Sz-O8Wl1Ckw
 
 ---
 
 ## Workflow Overview
 
-The workflow is divided into three main stages:
-
-### 1. New Lead Intake
-- A lead submits a form
-- Lead data is stored in Google Sheets
-- The workflow is triggered automatically
-
-### 2. AI Draft + Human Review
-- An AI agent generates a personalized sales email
-- The email is sent to a human reviewer
-- The reviewer can approve or deny the email
-- Optional feedback can be provided on denial
-
-### 3. Send or Revise
-- If approved, the email is sent to the customer
-- If denied, feedback is passed to another AI agent
-- The AI rewrites the email based on feedback
-- The revised email can be re-reviewed or sent
+1. A new lead submits a form
+2. Lead details are stored in Google Sheets
+3. An AI agent generates a personalized sales email
+4. The email is sent to a human reviewer for approval
+5. Reviewer approves or rejects the email
+6. If approved, the email is sent to the customer
+7. If rejected, feedback is captured
+8. A second AI agent rewrites the email based on feedback
+9. The revised email can be reviewed again or sent
 
 ---
 
 ## Key Features
 
-- Human-in-the-loop approval system
+- Human-in-the-Loop approval system
 - AI-generated sales emails
 - Feedback-driven email rewriting
-- Automated branching using text classification
-- Structured output parsing for reliability
-- End-to-end automation using n8n
+- Conditional routing based on approval or rejection
+- Automated email delivery
+- Built entirely using n8n workflows
 
 ---
 
@@ -53,21 +48,22 @@ The workflow is divided into three main stages:
 - n8n
 - Google Gemini (LLM)
 - Google Sheets
-- Gmail API
+- Gmail
 - Structured Output Parser
+- Text Classification
 
 ---
 
 ## Files in This Repository
 
 - `My workflow.json`  
-  n8n workflow export for the human-in-the-loop automation  
+  n8n workflow export for the Human-in-the-Loop automation
 
-- `Screenshot-2026-01-02-135644.png`  
-  Visual overview of the complete workflow  
+- `Screenshot 2026-01-02 135644.png`  
+  Visual overview of the complete workflow
 
 - `README.md`  
-  Project documentation  
+  Project documentation
 
 ---
 
@@ -75,24 +71,23 @@ The workflow is divided into three main stages:
 
 1. Import `My workflow.json` into n8n
 2. Configure Gmail and Google Sheets credentials
-3. Update the form trigger or input source
-4. Execute the workflow
-5. Review, approve, or deny AI-generated emails
+3. Set up the lead intake form
+4. Run the workflow
+5. Review AI-generated emails and approve or reject them
 
 ---
 
 ## Project Purpose
 
 This project was built to demonstrate:
-- Human-in-the-loop AI design
-- Reliable AI content generation
-- Sales automation workflows
-- Practical use of AI agents in business
-- Decision-based automation in n8n
+- Practical Human-in-the-Loop AI design
+- Real-world sales automation
+- AI-assisted decision workflows
+- Advanced n8n automation patterns
 
 ---
 
 ## Author
 
 Satvik Sharma  
-AI Automation | n8n Workflows | Agentic AI Projects
+AI Automation | n8n Workflows
